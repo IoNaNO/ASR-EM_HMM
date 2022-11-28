@@ -1,0 +1,353 @@
+<mxfile host="65bd71144e" scale="2" border="20">
+    <diagram id="naAyCyldzYRl_kAwMdqp" name="第 1 页">
+        <mxGraphModel dx="2194" dy="814" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="main.py" style="swimlane;startSize=20;horizontal=1;childLayout=flowLayout;flowOrientation=north;resizable=0;interRankCellSpacing=50;containerType=tree;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="260" width="233" height="460" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="generate_mfcc_samples" style="whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="20" y="40" width="192.5" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="generate_tesing_list" style="whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="42.81" y="130" width="146.88" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="html=1;curved=1;noEdgeStyle=1;orthogonal=1;" edge="1" parent="2" source="3" target="4">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="116.25" y="92"/>
+                            <mxPoint x="116.25" y="118"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="generate_traning_list" style="whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="53.125" y="220" width="126.25" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="html=1;curved=1;noEdgeStyle=1;orthogonal=1;" edge="1" parent="2" source="4" target="8">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="116.25" y="182"/>
+                            <mxPoint x="116.25" y="208"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="" style="html=1;curved=1;noEdgeStyle=1;orthogonal=1;" edge="1" target="22" source="8" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="266.25" y="490" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="116.25" y="272"/>
+                            <mxPoint x="116.25" y="298"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="EM_HMMtraning" style="whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="66.25" y="310" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="" style="html=1;curved=1;noEdgeStyle=1;orthogonal=1;" edge="1" target="56" source="22" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="376.25" y="560" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="116.25" y="362"/>
+                            <mxPoint x="116.25" y="388"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="56" value="HMMtesting" style="whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="66.25" y="400" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="generate_mfcc_samples.py/generate_mfcc_samples" style="swimlane;startSize=20;horizontal=1;childLayout=flowLayout;flowOrientation=north;resizable=1;interRankCellSpacing=50;containerType=tree;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="260" width="485" height="100" as="geometry">
+                        <mxRectangle x="340" y="80" width="330" height="20" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="&lt;div style=&quot;line-height: 19px&quot;&gt;&lt;font style=&quot;font-size: 12px ; background-color: rgb(255 , 255 , 255)&quot;&gt;python_speech_features.mfcc&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="11">
+                    <mxGeometry x="20" y="40" width="192.5" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="&lt;div style=&quot;line-height: 19px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;my_mfcc&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="11">
+                    <mxGeometry x="272.5" y="40" width="192.5" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="pylib: python_speech_features" style="swimlane;startSize=20;horizontal=1;childLayout=flowLayout;flowOrientation=north;resizable=1;interRankCellSpacing=50;containerType=tree;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="400" width="233" height="50" as="geometry">
+                        <mxRectangle x="509.75" y="410" width="170" height="20" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="" style="endArrow=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;elbow=vertical;" edge="1" parent="1" source="3">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="660" y="460" as="sourcePoint"/>
+                        <mxPoint x="510" y="320" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="" style="endArrow=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;elbow=vertical;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="23" target="27">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="610" y="460" as="sourcePoint"/>
+                        <mxPoint x="660" y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="mfcc.py/my_mfcc" style="swimlane;startSize=20;horizontal=1;childLayout=flowLayout;flowOrientation=north;resizable=1;interRankCellSpacing=50;containerType=tree;" vertex="1" parent="1">
+                    <mxGeometry x="762" y="390" width="233" height="550" as="geometry">
+                        <mxRectangle x="509.75" y="410" width="170" height="20" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="38" value="&lt;div style=&quot;line-height: 19px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;Pre-emphasis&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="36">
+                    <mxGeometry x="20" y="40" width="192.5" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="" style="edgeStyle=none;html=1;noEdgeStyle=1;orthogonal=1;" edge="1" source="38" target="40" parent="36">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="116.25" y="92"/>
+                            <mxPoint x="116.25" y="118"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="&lt;div style=&quot;line-height: 19px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;Framing&amp;amp;Windowing&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="36">
+                    <mxGeometry x="20" y="130" width="192.5" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="edgeStyle=none;html=1;noEdgeStyle=1;orthogonal=1;" edge="1" target="42" source="40" parent="36">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="998.25" y="710" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="116.25" y="182"/>
+                            <mxPoint x="116.25" y="208"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="42" value="&lt;div style=&quot;line-height: 19px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;STFT&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="36">
+                    <mxGeometry x="20" y="220" width="192.5" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="" style="edgeStyle=none;html=1;noEdgeStyle=1;orthogonal=1;" edge="1" target="44" source="42" parent="36">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="978.25" y="760" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="116.25" y="272"/>
+                            <mxPoint x="116.25" y="298"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="&lt;div style=&quot;line-height: 19px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;Mel-filter bank&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="36">
+                    <mxGeometry x="20" y="310" width="192.5" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="" style="edgeStyle=none;html=1;noEdgeStyle=1;orthogonal=1;" edge="1" target="46" source="44" parent="36">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="918.25" y="730" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="116.25" y="362"/>
+                            <mxPoint x="116.25" y="388"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="&lt;div style=&quot;line-height: 19px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;Log&amp;amp;DCT&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="36">
+                    <mxGeometry x="20" y="400" width="192.5" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="" style="edgeStyle=none;html=1;noEdgeStyle=1;orthogonal=1;" edge="1" target="48" source="46" parent="36">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="898.25" y="780" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="116.25" y="452"/>
+                            <mxPoint x="116.25" y="478"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" value="&lt;div style=&quot;line-height: 19px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;Energies&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="36">
+                    <mxGeometry x="20" y="490" width="192.5" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" style="html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;elbow=vertical;edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=none;endFill=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="46" target="23">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="630" y="450" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="750" y="810"/>
+                            <mxPoint x="750" y="428"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="50" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;endArrow=none;endFill=0;elbow=vertical;" edge="1" parent="1" source="29" target="36">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;endArrow=none;endFill=0;elbow=vertical;" edge="1" parent="1" source="51" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="generate_testing_list.py/generate_testing_list" style="swimlane;startSize=20;horizontal=1;childLayout=flowLayout;flowOrientation=north;resizable=1;interRankCellSpacing=50;containerType=tree;" vertex="1" parent="1">
+                    <mxGeometry x="-70" y="260" width="273" height="50" as="geometry">
+                        <mxRectangle x="509.75" y="410" width="170" height="20" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="54" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;endArrow=none;endFill=0;elbow=vertical;" edge="1" parent="1" source="52" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="generate_traning_list.py/generate_traning_list" style="swimlane;startSize=20;horizontal=1;childLayout=flowLayout;flowOrientation=north;resizable=1;interRankCellSpacing=50;containerType=tree;" vertex="1" parent="1">
+                    <mxGeometry x="-70" y="340" width="273" height="50" as="geometry">
+                        <mxRectangle x="509.75" y="410" width="170" height="20" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="57" value="EM_HMMtraning.py/EM_HMMtraning" style="swimlane;startSize=20;horizontal=1;childLayout=flowLayout;flowOrientation=north;resizable=1;interRankCellSpacing=50;containerType=tree;" vertex="1" parent="1">
+                    <mxGeometry x="-67" y="440" width="270" height="250" as="geometry">
+                        <mxRectangle x="509.75" y="410" width="170" height="20" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="58" value="EM_initialization_model" style="whiteSpace=wrap;html=1;" vertex="1" parent="57">
+                    <mxGeometry x="20" y="40" width="230" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;noEdgeStyle=1;orthogonal=1;" edge="1" source="58" target="60" parent="57">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="135" y="82"/>
+                            <mxPoint x="135" y="108"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="60" value="calculate_inital_EM_HMM_items" style="whiteSpace=wrap;html=1;" vertex="1" parent="57">
+                    <mxGeometry x="20" y="120" width="230" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;noEdgeStyle=1;orthogonal=1;" edge="1" target="62" source="60" parent="57">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="135" y="610" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="135" y="162"/>
+                            <mxPoint x="135" y="188"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="62" value="EM_HMM_FR" style="whiteSpace=wrap;html=1;" vertex="1" parent="57">
+                    <mxGeometry x="20" y="200" width="230" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;endArrow=none;endFill=0;elbow=vertical;" edge="1" parent="1" source="22" target="57">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="EM_HMM_FR.py/EM_HMM_FR" style="swimlane;startSize=20;horizontal=1;childLayout=flowLayout;flowOrientation=north;resizable=1;interRankCellSpacing=50;containerType=tree;" vertex="1" parent="1">
+                    <mxGeometry x="-67" y="740" width="318" height="424" as="geometry">
+                        <mxRectangle x="509.75" y="410" width="170" height="20" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="65" value="calculate alpha" style="whiteSpace=wrap;html=1;" vertex="1" parent="64">
+                    <mxGeometry x="48.75" y="40" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;noEdgeStyle=1;orthogonal=1;" edge="1" parent="64" source="65" target="67">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="158.75" y="82"/>
+                            <mxPoint x="158.75" y="108"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="67" value="calculate beta" style="whiteSpace=wrap;html=1;" vertex="1" parent="64">
+                    <mxGeometry x="58.75" y="120" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;noEdgeStyle=1;orthogonal=1;" edge="1" parent="64" source="67" target="69">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1155" y="2650" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="158.75" y="162"/>
+                            <mxPoint x="158.75" y="188"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="69" value="calculate Xi" style="whiteSpace=wrap;html=1;" vertex="1" parent="64">
+                    <mxGeometry x="63.75" y="200" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;noEdgeStyle=1;orthogonal=1;" edge="1" target="78" source="69" parent="64">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="693" y="2170" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="158.75" y="242"/>
+                            <mxPoint x="158.75" y="268"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="78" value="calculate gamma" style="whiteSpace=wrap;html=1;" vertex="1" parent="64">
+                    <mxGeometry x="63.75" y="280" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;noEdgeStyle=1;orthogonal=1;" edge="1" target="80" source="78" parent="64">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="480" y="1690" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="158.75" y="322"/>
+                            <mxPoint x="158.75" y="348"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="80" value="calculate sum of mean_numerator, var_numerator, aij_numerator and denominator" style="whiteSpace=wrap;html=1;" vertex="1" parent="64">
+                    <mxGeometry x="20" y="360" width="277.5" height="43.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="EM_HMM_FR.py/EM_HMM_FR" style="swimlane;fontFamily=Helvetica;fontSize=12;fontColor=default;startSize=20;strokeColor=default;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="273" y="740" width="200" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="logGaussian" style="whiteSpace=wrap;html=1;" vertex="1" parent="90">
+                    <mxGeometry x="20.625" y="40" width="158.75" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="log_sum_alpha" style="whiteSpace=wrap;html=1;" vertex="1" parent="90">
+                    <mxGeometry x="20" y="120" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="log_sum_beta" style="whiteSpace=wrap;html=1;" vertex="1" parent="90">
+                    <mxGeometry x="18.75" y="200" width="162.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=none;endFill=0;startSize=20;elbow=vertical;" edge="1" parent="1" source="65" target="86">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=none;endFill=0;startSize=20;elbow=vertical;" edge="1" parent="1" source="67" target="87">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=none;endFill=0;startSize=20;elbow=vertical;" edge="1" parent="1" source="65" target="85">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=none;endFill=0;startSize=20;elbow=vertical;" edge="1" parent="1" source="69" target="85">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=none;endFill=0;startSize=20;elbow=vertical;" edge="1" parent="1" source="62" target="64">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="HMMtesing.py/HMMtesting" style="swimlane;fontFamily=Helvetica;fontSize=12;fontColor=default;startSize=20;strokeColor=default;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="480" width="230" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="viterbi_dist_FR" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;startSize=20;strokeColor=default;fillColor=default;" vertex="1" parent="96">
+                    <mxGeometry x="31.5" y="40" width="170" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="viterbi_dist_FR.py/viterbi_dist_FR" style="swimlane;fontFamily=Helvetica;fontSize=12;fontColor=default;startSize=20;strokeColor=default;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="511.5" y="600" width="230" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="initialize" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;startSize=20;strokeColor=default;fillColor=default;" vertex="1" parent="98">
+                    <mxGeometry x="31.5" y="40" width="170" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="parse" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;startSize=20;strokeColor=default;fillColor=default;" vertex="1" parent="98">
+                    <mxGeometry x="31.5" y="120" width="170" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" value="optimal result" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;startSize=20;strokeColor=default;fillColor=default;" vertex="1" parent="98">
+                    <mxGeometry x="31.5" y="197" width="170" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="" style="edgeStyle=none;html=1;noEdgeStyle=1;orthogonal=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="98" source="99" target="102">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="378.25" y="-40" as="sourcePoint"/>
+                        <mxPoint x="378.25" y="10" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="117" y="100"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="110" value="" style="edgeStyle=none;html=1;noEdgeStyle=1;orthogonal=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="98" source="102" target="103">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="126.5" y="90" as="sourcePoint"/>
+                        <mxPoint x="126.5" y="130" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="111" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=none;endFill=0;elbow=vertical;" edge="1" parent="1" source="102" target="85">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=none;endFill=0;elbow=vertical;" edge="1" parent="1" source="56" target="96">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="113" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=none;endFill=0;elbow=vertical;" edge="1" parent="1" source="97" target="98">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="114" value="testing.py" style="swimlane;fontFamily=Helvetica;fontSize=12;fontColor=default;startSize=20;strokeColor=default;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="880" width="230" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" value="HMMtesting" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;startSize=20;strokeColor=default;fillColor=default;" vertex="1" parent="114">
+                    <mxGeometry x="31.5" y="40" width="170" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=none;endFill=0;elbow=vertical;" edge="1" parent="1" source="115" target="96">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
